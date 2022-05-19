@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Karolina & Roberto</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible"
+          content="ie=edge">
+    <meta name="description"
+          content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <!-- fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Engagement&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="/styles/styles.css">
+
+    <!-- favicon stuff: generated from favicon.io -->
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png">
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png">
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png">
+    <link rel="manifest"
+          href="/site.webmanifest">
+
+    <!-- Alpine Core -->
+    <script defer
+            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-fixed bg-hero-overlapping-hexagons">
+
+    <!--[if lt IE 8]>
+       <p class="browserupgrade">
+       You are using an <strong>outdated</strong> browser. Please
+       <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+       your experience.
+       </p>
+   <![endif]-->
+
+    <div class="flex justify-center fixed inset-x-0
+                
+                bg-emerald-25 bg-opacity-90
+                
+                text-emerald-450 font-names text-5xl sm:text-7xl md:text-9xl
+        ">
+        <a href='/'>
+            Karolina <span class="text-gold font-ampersand text-4xl sm:text-6xl md:text-8xl">&</span> Roberto
+        </a>
+    </div>
+    
+<nav class="bg-emerald-25 bg-opacity-80 shadow-lg fixed inset-x-0 my-12 md:my-32">
+    <div class="max-w-7xl md:max-w-max mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-evenly h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                <!-- Mobile menu button-->
+                <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-emerald-350 hover:text-emerald-25 hover:bg-emerald-350 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        x-data
+                        x-on:click="$store.nav_open = ! $store.nav_open">
+
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                         Icon when menu is closed.
+                         Heroicon name: outline/menu
+
+                         Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <!-- Bar icon for navigation -->
+                    <svg class="block h-6 w-6"
+                         x-data
+                         x-bind:class="{'hidden' : $store.nav_open}"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor"
+                         aria-hidden="true">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <!--
+                         Icon when menu is open.
+
+                         Heroicon name: outline/x
+
+                         Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden h-6 w-6"
+                         x-data
+                         x-bind:class="{'hidden' : ! $store.nav_open}"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="none"
+                         viewBox="0 0 24 24"
+                         stroke="currentColor"
+                         aria-hidden="true">
+                        <path stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="hidden sm:block sm:ml-6">
+                    <div class="flex-1 space-x-3 lg:space-x-4">
+                        <a href="/it/when-where"
+                           
+                           class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 px-3 py-2 rounded-md text-base md:text-md lg:text-lg font-cursive font-medium"
+                           
+                           aria-current="page">
+                            
+                            Dove &amp; Quando
+                            
+                        </a>
+
+                        <a href="/it/ceremony-banquet"
+                           
+                           class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 px-3 py-2 rounded-md text-base md:text-md lg:text-lg font-cursive font-medium"
+                           >
+                            
+                            Cerimonia
+                            
+                        </a>
+
+                        <a href="/it/gift"
+                           
+                           class="bg-emerald-350 text-emerald-25 px-3 py-2 rounded-md text-base md:text-md lg:text-lg font-cursive font-medium"
+                           >
+                            
+                            Regalo
+                            
+                        </a>
+
+                        <a href="/it/rsvp"
+                           
+                           class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 px-3 py-2 rounded-md text-base md:text-md lg:text-lg font-cursive font-medium"
+                           >
+                            
+                            Conferma
+                            
+                        </a>
+
+                        <a href="/it/contact"
+                           
+                           class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 px-3 py-2 rounded-md text-base md:text-md lg:text-lg font-cursive font-medium"
+                           >
+                            
+                            Contattaci
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile: show section titles after selection -->
+            
+
+            
+
+            
+            <div class="mx-0 sm:hidden bg-emerald-350 text-emerald-25 px-3 py-2 rounded-md text-sm md:text-md lg:text-lg font-cursive font-medium">
+                
+                Regalo
+                
+            </div>
+            
+
+            
+
+            
+
+        </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="hidden"
+         x-data
+         x-bind:class="{ 'block' : $store.nav_open , 'hidden' : ! $store.nav_open }"
+         id="mobile-menu"
+         x-show="$store.nav_open"
+         x-on:click.outside="$store.nav_open = false">
+
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="/it/when-where"
+               class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 block px-3 py-2 rounded-md text-sm md:text-md font-cursive font-medium"
+               aria-current="page">
+                
+                Dove &amp; Quando
+                
+            </a>
+
+            <a href="/it/ceremony-banquet"
+               class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 block px-3 py-2 rounded-md text-sm md:text-md font-cursive font-medium">
+                
+                Cerimonia
+                
+            </a>
+
+            <a href="/it/gift"
+               class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 block px-3 py-2 rounded-md text-sm md:text-md font-cursive font-medium">
+                
+                Regalo
+                
+            </a>
+
+            <a href="/it/rsvp"
+               class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 block px-3 py-2 rounded-md text-sm md:text-md font-cursive font-medium">
+                
+                Conferma
+                
+            </a>
+
+            <a href="/it/contact"
+               class="text-emerald-350 hover:bg-emerald-350 hover:text-emerald-25 block px-3 py-2 rounded-md text-sm md:text-md font-cursive font-medium">
+                
+                Contattaci
+                
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- link to latest post -->
+
+<!-- content -->
+
+<div class="w-5/6 md:w-3/6 md:pl-4 lg:pl-10 md:pr-4 flex self-start flex-col mx-auto py-28 md:py-48">
+    <div class="rounded-lg overflow-hidden shadow-lg bg-emerald-25 bg-opacity-10 flex flex-col p-6 md:py-8 lg:py-12 xl:py-16 md:px-8 lg:px-12 xl:px-20">
+        <div class="prose lg:prose-xl text-xl leading-relaxed tracking-normal text-emerald-350"
+             x-data
+             x-bind:class="{ 'text-opacity-10' : $store.nav_open , 'text-opacity-100' : ! $store.nav_open }">
+            
+            <p>Non ci sarà regalo migliore che festeggiare il nostro matrimonio insieme a voi! 
+Qualora vogliate comunque farci un regalo, li riceveremo durante la festa. 
+In alternativa, tramite il conto corrente:</p>
+<div class=
+"my-8 text-center leading-normal py-1 text-md md:text-xl text-emerald-350 border border-emerald-350 rounded-2xl">
+    <p>Karolina Di Remigio Eikås</p>
+    <p>IBAN: <span class="font-semibold">NO0237054886196</span></p>
+    <p>SWIFT/BIC: <span class="font-semibold">SOFJNO22</span></p>
+    
+    <p>presso <span class="font-semibold">Sparebanken Sogn og Fjordane</span></p>
+    
+</div>
+<p>Vi ringraziamo ancora per il vostro gradito regalo.</p>
+
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('nav_open', false)
+    })
+</script>
+
+
+</body>
+
+</html>

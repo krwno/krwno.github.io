@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://weddinginitalia.no/sitemap.xml
